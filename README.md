@@ -1,18 +1,49 @@
-# Curso Propedéutico de JavaScript - Refuerzo de Lógica de Programación
+# 🚀 Fundamentos de JavaScript - Refuerzo de Lógica de Programación
 
 Este repositorio contiene los ejercicios y retos prácticos del curso **"Fundamentos de JavaScript"** diseñado para nivelar estudiantes antes del inicio del bootcamp fullstack. Los ejercicios combinan HTML, CSS y JavaScript básico para reforzar la lógica de programación.
 
-## 📋 Índice
+## 🎯 ¿Nuevo en el curso? ¡Empieza aquí!
 
-- [Descripción del curso](#🎯-descripción-del-curso)
-- [Requerimientos del sistema](#💻-requerimientos-del-sistema)
-- [Instalación paso a paso](#🛠️-instalación-paso-a-paso)
-- [Estructura del proyecto](#📁-estructura-del-proyecto)
-- [Cómo usar este repositorio](#🚀-cómo-usar-este-repositorio)
-- [Flujo de trabajo](#💻-flujo-de-trabajo)
-- [Solución de problemas](#🔧-solución-de-problemas)
-- [Recursos adicionales](#📚-recursos-adicionales)
-- [Contacto y soporte](#📧-contacto-y-soporte)
+### 📚 **PASO 1: Lee la documentación completa**
+
+**Antes de hacer cualquier cosa**, ve a la carpeta [`04.Documentacion/`](./04.Documentacion/) y lee las guías paso a paso:
+
+1. **[📖 Índice de Documentación](./04.Documentacion/README.md)** - Vista general de todo
+2. **[🛠️ Configuración del Ambiente](./04.Documentacion/01-ambiente-desarrollo.md)** - **¡COMIENZA AQUÍ!**
+3. **[🧩 Cómo Resolver Retos](./04.Documentacion/02-como-resolver-retos.md)** - Metodología paso a paso
+4. **[� Comandos Git](./04.Documentacion/03-comandos-git.md)** - Control de versiones esencial
+5. **[🐛 Tips de Debugging](./04.Documentacion/04-debugging-tips.md)** - Solucionar errores como un pro
+6. **[� Recursos Extra](./04.Documentacion/05-recursos-extra.md)** - Referencias y herramientas adicionales
+
+### 🎮 **PASO 2: Completa los retos**
+
+Una vez configurado tu ambiente, ve a [`01.Retos/`](./01.Retos/) y comienza con el primer desafío.
+
+---
+
+## 📋 Resumen del Curso
+
+### 🎯 Objetivos
+
+- ✅ Reforzar la lógica de programación básica
+- ✅ Nivelar conocimientos antes del bootcamp fullstack
+- ✅ Practicar con HTML, CSS y JavaScript
+- ✅ Desarrollar habilidades de resolución de problemas
+- ✅ Preparar para tecnologías más avanzadas
+
+### ⏱️ Duración Estimada
+
+- **Tiempo total**: 2-4 semanas (depende de tu dedicación)
+- **Horas semanales recomendadas**: 10-15 horas
+- **Por reto**: 2-4 horas promedio
+
+### 🏆 Al completar el curso podrás:
+
+- Crear páginas web interactivas con JavaScript
+- Usar Git para versionar tu código
+- Debuggear errores de forma sistemática
+- Seguir buenas prácticas de desarrollo web
+- Estar listo para frameworks como React
 
 ## 🎯 Descripción del curso
 
@@ -23,390 +54,107 @@ Este curso está diseñado para:
 - ✅ Practicar con HTML, CSS y JavaScript
 - ✅ Desarrollar habilidades de resolución de problemas
 
-## 💻 Requerimientos del sistema
+## 💻 Requerimientos Rápidos
 
-### 📋 Requerimientos mínimos
+**¿Tu computadora es compatible?** Revisa los [requerimientos detallados](./04.Documentacion/01-ambiente-desarrollo.md#💻-requerimientos-del-sistema) en la documentación.
 
-#### Hardware
+### ✅ Requisitos Básicos
 
-- **Procesador**: Dual-core 2.0 GHz o superior
-- **RAM**: 4 GB mínimo
-- **Almacenamiento**: 5 GB de espacio libre
-- **Conexión a Internet**: Estable para descargas
+- **Sistema**: Windows 10+, macOS 10.15+, o Ubuntu 18.04+
+- **RAM**: 4GB mínimo (8GB recomendado)
+- **Espacio**: 5GB libres
+- **Internet**: Conexión estable
 
-#### Software
+### 🛠️ Software Necesario
 
-- **Sistema Operativo**:
-  - Windows 10/11
-  - macOS 10.15 o superior
-  - Ubuntu 18.04 o superior
+- Node.js LTS
+- Git
+- Visual Studio Code
+- Navegador moderno (Chrome/Firefox)
 
-### 🌟 Requerimientos recomendados
+**🚨 ¡No instales nada todavía!** La [guía de instalación](./04.Documentacion/01-ambiente-desarrollo.md) te llevará paso a paso.
 
-#### Hardware
-
-- **Procesador**: Quad-core 2.5 GHz o superior
-- **RAM**: 8 GB o más
-- **Almacenamiento**: 10 GB de espacio libre (SSD preferible)
-- **Monitor**: 1920x1080 o superior
-
-#### Software
-
-- **Sistema Operativo**: Versiones más recientes para mejor rendimiento
-
-## 🛠️ Instalación paso a paso
-
-### 1. Instalar Node.js
-
-Node.js es fundamental para ejecutar JavaScript fuera del navegador.
-
-#### Windows
-
-1. Ve a [nodejs.org](https://nodejs.org/)
-2. Descarga la versión **LTS** (recomendada)
-3. Ejecuta el instalador descargado
-4. Sigue el asistente (acepta las opciones por defecto)
-5. Reinicia tu computadora
-
-#### macOS
-
-```bash
-# Opción 1: Desde la página oficial
 # Ve a https://nodejs.org/ y descarga la versión LTS
 
-# Opción 2: Con Homebrew (si lo tienes instalado)
-brew install node
-```
-
-#### Linux (Ubuntu/Debian)
-
-```bash
-# Actualizar repositorios
-sudo apt update
-
-# Instalar Node.js y npm
-sudo apt install nodejs npm
-
-# Verificar instalación
-node --version
-npm --version
-```
-
-### 2. Verificar instalación de Node.js
-
-Abre tu terminal y ejecuta:
-
-```bash
-node --version
-npm --version
-```
-
-Deberías ver algo como:
-
-```
-v20.x.x
-10.x.x
-```
-
-### 3. Instalar Git
-
-Git es necesario para el control de versiones.
-
-#### Windows
-
-1. Ve a [git-scm.com](https://git-scm.com/)
-2. Descarga Git para Windows
-3. Ejecuta el instalador
-4. **Importante**: En "Adjusting your PATH environment", selecciona "Git from the command line and also from 3rd-party software"
-5. Usa las opciones por defecto para el resto
-
-#### macOS
-
-```bash
-# Git suele venir preinstalado, verificar con:
-git --version
-
-# Si no está instalado, usar Homebrew:
-brew install git
-```
-
-#### Linux
-
-```bash
-sudo apt install git
-```
-
-### 4. Configurar Git
-
-```bash
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu.email@ejemplo.com"
-```
-
-### 5. Instalar Visual Studio Code
-
-#### Todas las plataformas
-
-1. Ve a [code.visualstudio.com](https://code.visualstudio.com/)
-2. Descarga la versión para tu sistema operativo
-3. Instala siguiendo las instrucciones
-4. **Windows**: Marca "Add to PATH" durante la instalación
-
-#### Extensiones recomendadas para VS Code
-
-Instala estas extensiones desde el marketplace:
-
-- **Live Server** - Para servir archivos HTML
-- **Prettier** - Formateo automático de código
-- **ES7+ React/Redux/React-Native snippets** - Snippets útiles
-- **JavaScript (ES6) code snippets** - Más snippets
-- **Auto Rename Tag** - Para HTML
-- **Bracket Pair Colorizer** - Colores en paréntesis
-
-### 6. Terminal recomendada
-
-#### Windows
-
-- **Opción 1**: [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (Microsoft Store)
-- **Opción 2**: [Cmder](https://cmder.app/) - Terminal portátil
-- **Opción 3**: Usar la terminal integrada de VS Code
-
-#### macOS
-
-- **Terminal nativa** (ya incluida)
-- **iTerm2**: [iterm2.com](https://iterm2.com/) - Terminal mejorada
-- **Oh My Zsh**: [ohmyz.sh](https://ohmyz.sh/) - Para personalizar zsh
-
-#### Linux
-
-- **Terminal nativa** (ya incluida)
-- La mayoría de distribuciones incluyen terminales excelentes
-
-## 📁 Estructura del proyecto
+## 📁 Estructura del Proyecto
 
 ```
 2025-3-Javascript/
-├── 01.Retos/                     # Ejercicios prácticos
-│   ├── reto-1-estructura-perdida/
-│   │   ├── index.html
-│   │   ├── style.css
-│   │   └── README.md
-│   ├── reto-2-boton-invisible/
-│   ├── reto-3-hazme-hablar/
-│   ├── reto-4-tarjeta-con-estilo/
-│   ├── reto-5-tarjeta-oculta/
-│   └── reto-6-pagina-responsive/
+├── 01.Retos/                     # 6 ejercicios prácticos
 ├── 02.Clases/                    # Material de clases
 ├── 03.Tareas/                    # Tareas y ejercicios
-├── 04.Documentacion/             # Guías completas paso a paso
-│   ├── 01-ambiente-desarrollo.md
-│   ├── 02-como-resolver-retos.md
-│   ├── 03-comandos-git.md
-│   ├── 04-debugging-tips.md
-│   ├── 05-recursos-extra.md
-│   └── assets/
-├── .gitignore                    # Archivos que Git debe ignorar
+├── 04.Documentacion/             # 📚 Guías paso a paso (LEE ESTO PRIMERO)
+├── .gitignore                    # Configuración de Git
 └── README.md                     # Este archivo
 ```
 
-## 🚀 Cómo usar este repositorio
+---
 
-### 📚 IMPORTANTE: Lee la documentación primero
+## � Antes de Empezar - IMPORTANTE
 
-Antes de empezar con los retos, **es fundamental que leas la documentación** en la carpeta `04.Documentacion/`:
+### ⚡ Inicio Rápido (Solo 3 pasos)
 
-1. **[📖 Índice de Documentación](./04.Documentacion/README.md)** - Vista general
-2. **[🛠️ Configuración del Ambiente](./04.Documentacion/01-ambiente-desarrollo.md)** - COMIENZA AQUÍ
-3. **[🧩 Cómo Resolver Retos](./04.Documentacion/02-como-resolver-retos.md)** - Metodología
-4. **[🔧 Comandos Git](./04.Documentacion/03-comandos-git.md)** - Control de versiones
-5. **[🐛 Tips de Debugging](./04.Documentacion/04-debugging-tips.md)** - Solucionar errores
-6. **[📚 Recursos Extra](./04.Documentacion/05-recursos-extra.md)** - Referencias adicionales
+1. **📖 PASO 1**: Lee la [documentación completa](./04.Documentacion/) - **¡Empieza por aquí!**
+2. **🛠️ PASO 2**: Configura tu ambiente siguiendo [esta guía](./04.Documentacion/01-ambiente-desarrollo.md)
+3. **🎮 PASO 3**: Comienza con el [primer reto](./01.Retos/reto-1-estructura-perdida/)
 
-### Paso 1: Crear tu propia copia del proyecto
+### 🎯 Flujo Recomendado
 
-**⚠️ Importante**: No hagas fork. Crearás tu propio repositorio desde cero.
-
-1. **Crea un nuevo repositorio en tu GitHub**:
-
-   - Ve a [github.com](https://github.com)
-   - Clic en "New repository"
-   - Nombre: `2025-3-javascript-[tu-nombre]` (ejemplo: `2025-3-javascript-juan`)
-   - ✅ Marca "Add a README file"
-   - ✅ Marca "Add .gitignore" y selecciona "Node"
-   - Clic en "Create repository"
-
-2. **Clona TU repositorio**:
-
-   ```bash
-   git clone https://github.com/tu-usuario/2025-3-javascript-tu-nombre.git
-   cd 2025-3-javascript-tu-nombre
-   ```
-
-3. **Descarga los archivos del curso**:
-
-   - Ve al repositorio original: https://github.com/Inadaptados/2025-3-Javascript
-   - Clic en "Code" → "Download ZIP"
-   - Descomprime el ZIP
-   - Copia TODOS los archivos y carpetas a tu repositorio clonado
-
-4. **Sube los archivos a tu repositorio**:
-   ```bash
-   git add .
-   git commit -m "Agrego archivos iniciales del curso"
-   git push origin main
-   ```
-
-### Paso 2: Configurar el entorno de desarrollo
-
-1. **Abre el proyecto en VS Code**:
-
-   ```bash
-   code .
-   ```
-
-2. **Instala Live Server** (si no lo tienes):
-   - Ctrl+Shift+X (Cmd+Shift+X en Mac)
-   - Busca "Live Server"
-   - Clic en "Install"
-
-## 💻 Flujo de trabajo
-
-### Trabajando en los retos
-
-1. **Navega a un reto**:
-
-   ```bash
-   cd 01.Retos/reto-1-estructura-perdida
-   ```
-
-2. **Abre los archivos en VS Code**:
-
-   - Clic derecho en `index.html`
-   - "Open with Live Server"
-
-3. **Desarrolla tu solución**:
-
-   - Edita los archivos según las instrucciones del README
-   - Guarda frecuentemente (Ctrl+S)
-   - El navegador se actualizará automáticamente
-
-4. **Guarda tu progreso**:
-   ```bash
-   # Desde la raíz del proyecto
-   git add .
-   git commit -m "Solución del reto-1-estructura-perdida"
-   git push origin main
-   ```
-
-### Manteniendo tu progreso actualizado
-
-Haz commits frecuentes con mensajes descriptivos:
-
-```bash
-git add .
-git commit -m "Progreso en reto-2: implementé la funcionalidad del botón"
-git push origin main
+```
+📚 Leer documentación → 🛠️ Configurar ambiente → 🎮 Resolver retos → 🚀 ¡Listo para el bootcamp!
 ```
 
-## 🔧 Solución de problemas
+---
 
-### Problema: "node no se reconoce como comando"
+## 🆘 ¿Necesitas Ayuda?
 
-**Solución Windows**:
+- **💻 Problemas técnicos**: Consulta la [guía de troubleshooting](./04.Documentacion/01-ambiente-desarrollo.md#🚨-solución-de-problemas)
+- **🧩 No sabes cómo resolver un reto**: Lee la [metodología](./04.Documentacion/02-como-resolver-retos.md)
+- **🐛 Errores en tu código**: Revisa los [tips de debugging](./04.Documentacion/04-debugging-tips.md)
+- **🔧 Problemas con Git**: Consulta los [comandos esenciales](./04.Documentacion/03-comandos-git.md)
 
-1. Reinicia tu computadora después de instalar Node.js
-2. Si persiste, agrega Node.js manualmente al PATH:
-   - Busca "Variables de entorno"
-   - Edita la variable PATH
-   - Agrega: `C:\Program Files\nodejs`
+---
 
-**Solución macOS/Linux**:
+## 🏆 ¿Qué Vas a Aprender?
 
-```bash
-# Verifica si Node está en PATH
-echo $PATH
+Al completar este curso serás capaz de:
 
-# Si no aparece, agrega a tu .bashrc o .zshrc:
-export PATH="/usr/local/bin:$PATH"
-```
+- ✅ Crear páginas web interactivas con HTML, CSS y JavaScript
+- ✅ Usar Git para versionar y subir tu código
+- ✅ Debuggear errores de forma sistemática
+- ✅ Resolver problemas de programación paso a paso
+- ✅ Estar preparado para frameworks como React
 
-### Problema: Live Server no funciona
+---
 
-1. Verifica que la extensión esté instalada
-2. Clic derecho en un archivo `.html`
-3. Si no aparece "Open with Live Server", reinstala la extensión
+## � Contacto y Soporte
 
-### Problema: Git no reconoce cambios
-
-```bash
-# Verifica el estado
-git status
-
-# Si no aparecen archivos, puede ser el .gitignore
-git add -f archivo-especifico.js
-```
-
-### Problema: Errores de permisos en macOS/Linux
-
-```bash
-# Para npm
-sudo chown -R $(whoami) ~/.npm
-```
-
-## 📚 Recursos adicionales
-
-### Documentación oficial
-
-- [MDN Web Docs - JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [W3Schools JavaScript](https://www.w3schools.com/js/)
-
-### Editores de código online (para practicar)
-
-- [CodePen](https://codepen.io/)
-- [JSFiddle](https://jsfiddle.net/)
-- [Repl.it](https://replit.com/)
-
-### Extensiones de navegador útiles
-
-- **Developer Tools** (ya incluidas en Chrome/Firefox)
-- **JSONView** - Para visualizar JSON
-- **Wappalyzer** - Detecta tecnologías web
-
-## 📧 Contacto y soporte
-
-### Durante las clases
+### 🎓 Durante las Clases
 
 - Levanta la mano para dudas inmediatas
 - Usa el chat para preguntas rápidas
 
-### Fuera del horario de clase
+### 💬 Fuera de Horario
 
-- **Issues en GitHub**: Crea un issue en tu repositorio con tu pregunta
-- **Discord/Slack del curso**: Usa los canales designados
-- **Email**: [email-del-instructor]
+- **GitHub Issues**: Crea un issue en tu repositorio personal
+- **Canales del curso**: Discord/Slack según se indique
+- **Email del instructor**: Se proporcionará en clase
 
-### Antes de preguntar
+### ✅ Antes de Preguntar
 
-1. ✅ ¿Revisé el README del reto específico?
-2. ✅ ¿Busqué el error en Google?
-3. ✅ ¿Probé reiniciar VS Code/navegador?
-4. ✅ ¿Verifiqué que mi código no tenga errores de sintaxis?
-
----
-
-## 🎉 ¡Bienvenido al curso!
-
-¡Estás listo para comenzar! Recuerda:
-
-- 🐢 **Ve despacio**: Es mejor entender bien que avanzar rápido
-- 🔄 **Practica constantemente**: La programación se aprende haciendo
-- ❓ **Pregunta sin miedo**: No hay preguntas tontas
-- 💪 **Sé paciente contigo mismo**: Todos empezamos desde cero
-- 🚀 **Disfruta el proceso**: Programar puede ser muy divertido
-
-**¡Mucho éxito en tu journey de programación!** 🌟
+1. ¿Revisé la documentación relevante?
+2. ¿Busqué el error en Google?
+3. ¿Probé las soluciones de troubleshooting?
+4. ¿Intenté debuggear usando las herramientas?
 
 ---
 
-_Última actualización: Enero 2025_
-_Versión del curso: 2025-3_
+## 🎉 ¡Comienza Tu Journey!
+
+**🎯 Tu siguiente paso**: Ve a [`04.Documentacion/`](./04.Documentacion/) y lee el índice para empezar.
+
+**¡Mucho éxito en tu aprendizaje de programación!** 🌟
+
+---
+
+_Fundamentos de JavaScript 2025-3 | [Inadaptados](https://github.com/Inadaptados)_
