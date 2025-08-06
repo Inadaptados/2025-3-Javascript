@@ -138,7 +138,6 @@ Al completar este curso serás capaz de:
 
 - **GitHub Issues**: Crea un issue en tu repositorio personal
 - **Canales del curso**: Discord/Slack según se indique
-- **Email del instructor**: Se proporcionará en clase
 
 ### ✅ Antes de Preguntar
 
