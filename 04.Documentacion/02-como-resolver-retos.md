@@ -5,8 +5,9 @@ Esta guía te enseñará la metodología paso a paso para abordar y resolver cad
 ## 🎯 Filosofía del Curso
 
 Los retos están diseñados para:
+
 - **Reforzar conceptos**: Cada ejercicio practica habilidades específicas
-- **Construir progresivamente**: Cada reto es más complejo que el anterior  
+- **Construir progresivamente**: Cada reto es más complejo que el anterior
 - **Desarrollar lógica**: Más importante que memorizar sintaxis
 - **Simular situaciones reales**: Problemas que encontrarás como desarrollador
 
@@ -15,6 +16,7 @@ Los retos están diseñados para:
 ## 📋 Metodología PROBLEMA → SOLUCIÓN
 
 ### 🔍 Paso 1: ENTENDER el Problema
+
 **Tiempo estimado: 10-15 minutos**
 
 1. **Lee COMPLETAMENTE** el README del reto
@@ -32,12 +34,14 @@ Los retos están diseñados para:
 💡 **Tip**: Si no entiendes algo, pregunta ANTES de comenzar a programar.
 
 ### 📝 Paso 2: PLANIFICAR la Solución
+
 **Tiempo estimado: 10-20 minutos**
 
 1. **Descompón el problema**:
+
    ```
    Ejemplo: "Botón que cambie de color al hacer clic"
-   
+
    Pasos:
    - Crear/encontrar el botón en HTML
    - Escribir función que cambie el color
@@ -46,6 +50,7 @@ Los retos están diseñados para:
    ```
 
 2. **Identifica qué tecnologías usar**:
+
    - HTML para estructura
    - CSS para estilos
    - JavaScript para interactividad
@@ -55,14 +60,17 @@ Los retos están diseñados para:
    - ¿Qué puedo agregar si me sobra tiempo?
 
 ### ⚡ Paso 3: IMPLEMENTAR la Solución
+
 **Tiempo estimado: Variable según reto**
 
 1. **Comienza con lo básico**:
+
    - HTML primero
    - CSS después
    - JavaScript al final
 
 2. **Prueba frecuentemente**:
+
    - Guarda cada cambio (Ctrl+S)
    - Refresca el navegador
    - Verifica que funciona antes de continuar
@@ -72,9 +80,11 @@ Los retos están diseñados para:
    - Haz una funcionalidad, pruébala, luego la siguiente
 
 ### 🧪 Paso 4: PROBAR y DEPURAR
+
 **Tiempo estimado: 15-30 minutos**
 
 1. **Prueba diferentes casos**:
+
    - Funcionalidad normal
    - Casos extremos
    - ¿Qué pasa si hago clic rápido?
@@ -85,9 +95,11 @@ Los retos están diseñados para:
    - Usa `console.log()` para debuggear
 
 ### 📤 Paso 5: DOCUMENTAR y SUBIR
+
 **Tiempo estimado: 5-10 minutos**
 
 1. **Limpia tu código**:
+
    - Elimina console.logs innecesarios
    - Indenta correctamente
    - Agrega comentarios si es necesario
@@ -104,6 +116,7 @@ Los retos están diseñados para:
 ## 📁 Estructura de Archivos
 
 Cada reto sigue esta estructura:
+
 ```
 reto-X-nombre/
 ├── README.md          # Instrucciones del reto
@@ -124,6 +137,7 @@ reto-X-nombre/
 ## 🛠️ Flujo de Trabajo Recomendado
 
 ### 1. Preparar el Entorno
+
 ```bash
 # Navegar al reto
 cd 01.Retos/reto-1-estructura-perdida
@@ -136,11 +150,13 @@ code .
 ```
 
 ### 2. Ventanas Organizadas
+
 - **VS Code**: Lado izquierdo
 - **Navegador**: Lado derecho
 - **DevTools**: Panel inferior del navegador
 
 ### 3. Cycle de Desarrollo
+
 1. Leer README
 2. Modificar código
 3. Guardar (Ctrl+S)
@@ -152,17 +168,17 @@ code .
 ## 🎨 Buenas Prácticas
 
 ### HTML
+
 ```html
 <!-- ✅ Bueno: Semántico y claro -->
-<button id="cambiar-color" class="btn-principal">
-  Cambiar Color
-</button>
+<button id="cambiar-color" class="btn-principal">Cambiar Color</button>
 
 <!-- ❌ Malo: No descriptivo -->
 <div onclick="cambiar()">Botón</div>
 ```
 
 ### CSS
+
 ```css
 /* ✅ Bueno: Nombres descriptivos */
 .btn-principal {
@@ -179,15 +195,16 @@ code .
 ```
 
 ### JavaScript
+
 ```javascript
 // ✅ Bueno: Función clara con buen nombre
 function cambiarColorFondo() {
-  document.body.style.backgroundColor = 'lightblue';
+  document.body.style.backgroundColor = "lightblue";
 }
 
 // ❌ Malo: Código confuso
 function x() {
-  document.body.style.backgroundColor = 'lightblue';
+  document.body.style.backgroundColor = "lightblue";
 }
 ```
 
@@ -196,15 +213,16 @@ function x() {
 ## 🐛 Debugging: Cómo Encontrar Errores
 
 ### 1. Usa las DevTools
+
 ```javascript
 // F12 para abrir DevTools
 // Ve a "Console" para ver errores
 
 // Usa console.log para debuggear:
 function cambiarColor() {
-  console.log('Función ejecutada'); // Verificar que se ejecute
-  const color = 'red';
-  console.log('Color seleccionado:', color); // Ver valores
+  console.log("Función ejecutada"); // Verificar que se ejecute
+  const color = "red";
+  console.log("Color seleccionado:", color); // Ver valores
   document.body.style.backgroundColor = color;
 }
 ```
@@ -212,6 +230,7 @@ function cambiarColor() {
 ### 2. Errores Comunes
 
 **JavaScript no funciona:**
+
 ```javascript
 // ❌ Error común: Olvidar conectar el evento
 function cambiarColor() {
@@ -219,10 +238,11 @@ function cambiarColor() {
 }
 
 // ✅ Solución: Conectar al HTML
-document.getElementById('boton').addEventListener('click', cambiarColor);
+document.getElementById("boton").addEventListener("click", cambiarColor);
 ```
 
 **CSS no se aplica:**
+
 ```css
 /* ❌ Error: Selector incorrecto */
 #mi-boton {
@@ -233,6 +253,7 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 ```
 
 ### 3. Checklist de Debugging
+
 - [ ] ¿Hay errores en la consola?
 - [ ] ¿Los IDs y clases coinciden entre HTML, CSS y JS?
 - [ ] ¿Guardé todos los archivos?
@@ -243,18 +264,21 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 ## ⏱️ Gestión del Tiempo
 
 ### Reto Básico (1-2 horas)
+
 - 15 min: Entender problema
 - 20 min: Planificar
 - 60-90 min: Implementar
 - 15 min: Probar y debuggear
 
 ### Reto Intermedio (2-3 horas)
+
 - 20 min: Entender problema
 - 30 min: Planificar
 - 90-120 min: Implementar
 - 30 min: Probar y debuggear
 
 ### 🚨 Si Te Atasas
+
 1. **Pausa 10 minutos** - Camina, respira
 2. **Lee el problema de nuevo** - ¿Entendiste bien?
 3. **Simplifica** - ¿Puedes hacer una versión más simple?
@@ -269,15 +293,18 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 ## 📈 Niveles de Completación
 
 ### 🥉 Nivel Básico
+
 - El reto funciona según las especificaciones mínimas
 - Cumple con todos los requisitos del README
 
-### 🥈 Nivel Intermedio  
+### 🥈 Nivel Intermedio
+
 - Funcionalidad básica + mejoras en el diseño
 - Código limpio y bien organizado
 - Manejo de casos edge
 
 ### 🥇 Nivel Avanzado
+
 - Funcionalidad extra creativa
 - Código optimizado y comentado
 - Responsive design
@@ -290,12 +317,14 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 ## 🎯 Mindset de Éxito
 
 ### ✅ Mentalidad Correcta
+
 - **"No sé cómo hacerlo... AÚN"**
 - **"Cada error me enseña algo"**
 - **"Voy paso a paso"**
 - **"Pido ayuda cuando la necesito"**
 
 ### ❌ Mentalidad Limitante
+
 - ~~"No soy bueno para esto"~~
 - ~~"Es demasiado difícil"~~
 - ~~"Otros lo hacen más rápido"~~
@@ -306,12 +335,14 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 ## 🎊 Celebra los Logros
 
 ### Pequeños Wins
+
 - ✅ Primer HTML válido
-- ✅ Primer CSS que funciona  
+- ✅ Primer CSS que funciona
 - ✅ Primer JavaScript sin errores
 - ✅ Primer reto completado
 
 ### Grandes Wins
+
 - ✅ Reto resuelto sin ayuda
 - ✅ Código que funciona a la primera
 - ✅ Ayudar a un compañero
@@ -328,6 +359,6 @@ document.getElementById('boton').addEventListener('click', cambiarColor);
 
 ---
 
-*¡Ahora tienes la metodología! Es hora de aplicarla. 🚀*
+_¡Ahora tienes la metodología! Es hora de aplicarla. 🚀_
 
 **Siguiente paso**: [Comandos Git Esenciales](./03-comandos-git.md)

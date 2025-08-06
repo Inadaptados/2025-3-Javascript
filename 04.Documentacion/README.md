@@ -20,6 +20,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 ## 🎯 Guías Disponibles
 
 ### 🛠️ [01. Configuración del Ambiente de Desarrollo](./01-ambiente-desarrollo.md)
+
 - Instalación paso a paso de todas las herramientas
 - Verificación de la instalación
 - Solución de problemas comunes
@@ -27,6 +28,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 - **Estado**: ✅ Completo
 
 ### 🧩 [02. Cómo Resolver los Retos](./02-como-resolver-retos.md)
+
 - Metodología para abordar problemas
 - Estructura de carpetas y archivos
 - Buenas prácticas de código
@@ -34,6 +36,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 - **Estado**: ✅ Completo
 
 ### 🔧 [03. Comandos Git Esenciales](./03-comandos-git.md)
+
 - Comandos básicos de Git
 - Flujo de trabajo con repositorios
 - Resolución de conflictos
@@ -41,6 +44,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 - **Estado**: ✅ Completo
 
 ### 🐛 [04. Tips de Debugging](./04-debugging-tips.md)
+
 - Herramientas de desarrollo del navegador
 - Técnicas de depuración en JavaScript
 - Errores comunes y soluciones
@@ -48,6 +52,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 - **Estado**: ✅ Completo
 
 ### 📖 [05. Recursos Adicionales](./05-recursos-extra.md)
+
 - Documentación oficial
 - Tutoriales complementarios
 - Herramientas útiles
@@ -67,16 +72,19 @@ Si eres nuevo en el curso, sigue este orden:
 ## 📞 ¿Necesitas Ayuda?
 
 ### 🆘 Problemas Técnicos
+
 - Revisa la sección correspondiente en esta documentación
 - Consulta [04. Tips de Debugging](./04-debugging-tips.md)
 - Crea un issue en tu repositorio con detalles del problema
 
 ### 💡 Dudas Conceptuales
+
 - Consulta [05. Recursos Adicionales](./05-recursos-extra.md)
 - Pregunta en clase o en los canales del curso
 - Revisa el README específico de cada reto
 
 ### 🔄 Actualizaciones
+
 Esta documentación se actualiza constantemente. Si encuentras información desactualizada o tienes sugerencias, ¡compártelas!
 
 ---
@@ -84,11 +92,11 @@ Esta documentación se actualiza constantemente. Si encuentras información desa
 ## 📈 Progreso Recomendado
 
 - [ ] ✅ Ambiente configurado y funcionando
-- [ ] 🧩 Metodología de resolución entendida  
+- [ ] 🧩 Metodología de resolución entendida
 - [ ] 🔧 Git configurado y comandos básicos dominados
 - [ ] 🎯 Primer reto completado
 - [ ] 🚀 ¡Listo para el bootcamp!
 
 ---
 
-*¡Bienvenido al mundo de la programación! 🌟*
+_¡Bienvenido al mundo de la programación! 🌟_

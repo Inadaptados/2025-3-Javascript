@@ -198,10 +198,29 @@ Instala estas extensiones desde el marketplace:
 │   └── reto-6-pagina-responsive/
 ├── 02.Clases/                    # Material de clases
 ├── 03.Tareas/                    # Tareas y ejercicios
+├── 04.Documentacion/             # Guías completas paso a paso
+│   ├── 01-ambiente-desarrollo.md
+│   ├── 02-como-resolver-retos.md
+│   ├── 03-comandos-git.md
+│   ├── 04-debugging-tips.md
+│   ├── 05-recursos-extra.md
+│   └── assets/
+├── .gitignore                    # Archivos que Git debe ignorar
 └── README.md                     # Este archivo
 ```
 
 ## 🚀 Cómo usar este repositorio
+
+### 📚 IMPORTANTE: Lee la documentación primero
+
+Antes de empezar con los retos, **es fundamental que leas la documentación** en la carpeta `04.Documentacion/`:
+
+1. **[📖 Índice de Documentación](./04.Documentacion/README.md)** - Vista general
+2. **[🛠️ Configuración del Ambiente](./04.Documentacion/01-ambiente-desarrollo.md)** - COMIENZA AQUÍ
+3. **[🧩 Cómo Resolver Retos](./04.Documentacion/02-como-resolver-retos.md)** - Metodología
+4. **[🔧 Comandos Git](./04.Documentacion/03-comandos-git.md)** - Control de versiones
+5. **[🐛 Tips de Debugging](./04.Documentacion/04-debugging-tips.md)** - Solucionar errores
+6. **[📚 Recursos Extra](./04.Documentacion/05-recursos-extra.md)** - Referencias adicionales
 
 ### Paso 1: Crear tu propia copia del proyecto
 
