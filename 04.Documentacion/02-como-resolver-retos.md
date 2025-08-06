@@ -277,7 +277,7 @@ document.getElementById("boton").addEventListener("click", cambiarColor);
 - 90-120 min: Implementar
 - 30 min: Probar y debuggear
 
-### 🚨 Si Te Atasas
+### 🚨 Si Te Atrasas
 
 1. **Pausa 10 minutos** - Camina, respira
 2. **Lee el problema de nuevo** - ¿Entendiste bien?
@@ -290,7 +290,7 @@ document.getElementById("boton").addEventListener("click", cambiarColor);
 
 ---
 
-## 📈 Niveles de Completación
+## 📈 Niveles de Cumplimiento
 
 ### 🥉 Nivel Básico
 

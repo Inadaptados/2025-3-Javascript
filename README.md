@@ -1,6 +1,6 @@
 # 🚀 Fundamentos de JavaScript - Refuerzo de Lógica de Programación
 
-Este repositorio contiene los ejercicios y retos prácticos del curso **"Fundamentos de JavaScript"** diseñado para nivelar estudiantes antes del inicio del bootcamp fullstack. Los ejercicios combinan HTML, CSS y JavaScript básico para reforzar la lógica de programación.
+Este repositorio contiene los ejercicios y retos prácticos del curso **"Fundamentos de JavaScript"** diseñado para estudiantes antes del inicio del programa fullstack. Los ejercicios combinan HTML, CSS y JavaScript básico para reforzar la lógica de programación.
 
 ## 🎯 ¿Nuevo en el curso? ¡Empieza aquí!
 
@@ -13,7 +13,6 @@ Este repositorio contiene los ejercicios y retos prácticos del curso **"Fundame
 3. **[🧩 Cómo Resolver Retos](./04.Documentacion/02-como-resolver-retos.md)** - Metodología paso a paso
 4. **[� Comandos Git](./04.Documentacion/03-comandos-git.md)** - Control de versiones esencial
 5. **[🐛 Tips de Debugging](./04.Documentacion/04-debugging-tips.md)** - Solucionar errores como un pro
-6. **[� Recursos Extra](./04.Documentacion/05-recursos-extra.md)** - Referencias y herramientas adicionales
 
 ### 🎮 **PASO 2: Completa los retos**
 
@@ -26,14 +25,14 @@ Una vez configurado tu ambiente, ve a [`01.Retos/`](./01.Retos/) y comienza con 
 ### 🎯 Objetivos
 
 - ✅ Reforzar la lógica de programación básica
-- ✅ Nivelar conocimientos antes del bootcamp fullstack
+- ✅ Nivelar conocimientos antes del programa fullstack MERN
 - ✅ Practicar con HTML, CSS y JavaScript
 - ✅ Desarrollar habilidades de resolución de problemas
 - ✅ Preparar para tecnologías más avanzadas
 
 ### ⏱️ Duración Estimada
 
-- **Tiempo total**: 2-4 semanas (depende de tu dedicación)
+- **Tiempo total**: 3 semanas (depende de tu dedicación)
 - **Horas semanales recomendadas**: 10-15 horas
 - **Por reto**: 2-4 horas promedio
 
@@ -44,15 +43,6 @@ Una vez configurado tu ambiente, ve a [`01.Retos/`](./01.Retos/) y comienza con 
 - Debuggear errores de forma sistemática
 - Seguir buenas prácticas de desarrollo web
 - Estar listo para frameworks como React
-
-## 🎯 Descripción del curso
-
-Este curso está diseñado para:
-
-- ✅ Reforzar la lógica de programación básica
-- ✅ Nivelar conocimientos antes del bootcamp fullstack
-- ✅ Practicar con HTML, CSS y JavaScript
-- ✅ Desarrollar habilidades de resolución de problemas
 
 ## 💻 Requerimientos Rápidos
 
@@ -71,10 +61,8 @@ Este curso está diseñado para:
 - Git
 - Visual Studio Code
 - Navegador moderno (Chrome/Firefox)
-
-**🚨 ¡No instales nada todavía!** La [guía de instalación](./04.Documentacion/01-ambiente-desarrollo.md) te llevará paso a paso.
-
-# Ve a https://nodejs.org/ y descarga la versión LTS
+- Terminal (cmd, PowerShell, Terminal de macOS o Linux)
+  **🚨 ¡No instales nada todavía!** La [guía de instalación](./04.Documentacion/01-ambiente-desarrollo.md) te llevará paso a paso.
 
 ## 📁 Estructura del Proyecto
 
@@ -90,9 +78,9 @@ Este curso está diseñado para:
 
 ---
 
-## � Antes de Empezar - IMPORTANTE
+## Antes de Empezar - IMPORTANTE
 
-### ⚡ Inicio Rápido (Solo 3 pasos)
+### Inicio Rápido (Solo 3 pasos)
 
 1. **📖 PASO 1**: Lee la [documentación completa](./04.Documentacion/) - **¡Empieza por aquí!**
 2. **🛠️ PASO 2**: Configura tu ambiente siguiendo [esta guía](./04.Documentacion/01-ambiente-desarrollo.md)
@@ -101,7 +89,7 @@ Este curso está diseñado para:
 ### 🎯 Flujo Recomendado
 
 ```
-📚 Leer documentación → 🛠️ Configurar ambiente → 🎮 Resolver retos → 🚀 ¡Listo para el bootcamp!
+📚 Leer documentación → 🛠️ Configurar ambiente → 🎮 Resolver retos → 🚀 ¡Listo para iniciar!
 ```
 
 ---
@@ -127,7 +115,7 @@ Al completar este curso serás capaz de:
 
 ---
 
-## � Contacto y Soporte
+## Contacto y Soporte
 
 ### 🎓 Durante las Clases
 
@@ -137,7 +125,7 @@ Al completar este curso serás capaz de:
 ### 💬 Fuera de Horario
 
 - **GitHub Issues**: Crea un issue en tu repositorio personal
-- **Canales del curso**: Discord/Slack según se indique
+- **Canales del curso**: Discord
 
 ### ✅ Antes de Preguntar
 
@@ -156,4 +144,4 @@ Al completar este curso serás capaz de:
 
 ---
 
-_Fundamentos de JavaScript 2025-3 | [Inadaptados](https://github.com/Inadaptados)_
+_Fundamentos de JavaScript 2025-3 | [Inadaptados](https://github.com/Inadaptados/2025-3-Javascript)_

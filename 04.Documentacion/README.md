@@ -1,4 +1,4 @@
-# 📚 Documentación del Curso - JavaScript Propedéutico
+# 📚 Documentación del Curso - JavaScript Fundamentals
 
 Bienvenido a la sección de documentación del curso. Aquí encontrarás guías detalladas, tutoriales paso a paso y recursos para completar exitosamente el programa.
 

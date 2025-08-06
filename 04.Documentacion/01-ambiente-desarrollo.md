@@ -195,6 +195,11 @@ Una buena terminal hace la diferencia.
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+**Alternativa: Warp**
+
+1. Ve a [warp.dev](https://warp.dev/)
+2. Descarga e instala
+
 **Alternativa: iTerm2**
 
 1. Ve a [iterm2.com](https://iterm2.com/)
@@ -220,7 +225,7 @@ Ahora configuremos tu espacio de trabajo:
 2. Clic en "New repository" (botón verde)
 3. Configuración:
    - **Name**: `2025-3-javascript-[tu-nombre]`
-   - **Description**: `Mi progreso en el curso propedéutico de JavaScript`
+   - **Description**: `Mi progreso en el curso de JavaScript Fundamentals`
    - ✅ **Public**
    - ✅ **Add a README file**
    - ✅ **Add .gitignore** → selecciona "Node"
@@ -357,7 +362,7 @@ Si llegaste hasta aquí y todos los tests pasaron, ¡tu ambiente está listo!
 
 - Revisa la sección de solución de problemas
 - Pregunta en clase
-- Crea un issue en tu repositorio
+- Buscanos en el canal de Discord del curso
 
 ---
 
