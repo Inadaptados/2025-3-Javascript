@@ -6,7 +6,7 @@ Este repositorio contiene los ejercicios y retos prácticos del curso **"Fundame
 
 ### 📚 **PASO 1: Lee la documentación completa**
 
-**Antes de hacer cualquier cosa**, ve a la carpeta [`04.Documentacion/`](./04.Documentacion/) y lee las guías paso a paso:
+Antes de comenzar, es fundamental que leas la documentación completa para entender cómo está estructurado el curso y qué herramientas necesitas. Aquí tienes un resumen de las guías disponibles:
 
 1. **[📖 Índice de Documentación](./04.Documentacion/README.md)** - Vista general de todo
 2. **[🛠️ Configuración del Ambiente](./04.Documentacion/01-ambiente-desarrollo.md)** - **¡COMIENZA AQUÍ!**
@@ -100,20 +100,6 @@ Una vez configurado tu ambiente, ve a [`01.Retos/`](./01.Retos/) y comienza con 
 - **🧩 No sabes cómo resolver un reto**: Lee la [metodología](./04.Documentacion/02-como-resolver-retos.md)
 - **🐛 Errores en tu código**: Revisa los [tips de debugging](./04.Documentacion/04-debugging-tips.md)
 - **🔧 Problemas con Git**: Consulta los [comandos esenciales](./04.Documentacion/03-comandos-git.md)
-
----
-
-## 🏆 ¿Qué Vas a Aprender?
-
-Al completar este curso serás capaz de:
-
-- ✅ Crear páginas web interactivas con HTML, CSS y JavaScript
-- ✅ Usar Git para versionar y subir tu código
-- ✅ Debuggear errores de forma sistemática
-- ✅ Resolver problemas de programación paso a paso
-- ✅ Estar preparado para frameworks como React
-
----
 
 ## Contacto y Soporte
 

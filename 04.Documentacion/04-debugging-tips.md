@@ -643,6 +643,4 @@ Recuerda:
 
 ---
 
-**Siguiente paso**: [Recursos Adicionales](./05-recursos-extra.md)
-
 _¡Happy debugging! 🐛→✨_

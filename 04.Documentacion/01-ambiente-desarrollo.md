@@ -115,6 +115,8 @@ sudo apt install git
 
 **Esto es MUY importante - hazlo con tu información real:**
 
+Cuando crees tu repositorio, Git necesita saber quién eres para registrar tus cambios correctamente. Por lo tanto, configura tu nombre y correo electrónico con el que te registraste en GitHub:
+
 ```bash
 git config --global user.name "Tu Nombre Completo"
 git config --global user.email "tu.email@gmail.com"
