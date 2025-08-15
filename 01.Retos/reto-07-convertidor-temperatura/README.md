@@ -23,69 +23,175 @@ Archivos del reto:
 - Primero pregunta por el tipo (C o F).
 - Después pide la temperatura numérica.
 - Muestra SIEMPRE ambos valores: en °C y en °F (conversión + el valor original).
-- Acepta C/f y F/f (no distingas mayúsculas/minúsculas).
+- Acepta C/c y F/f (no distingas mayúsculas/minúsculas).
 - Si hay entradas inválidas (tipo distinto a C/F o valor no numérico), muestra un mensaje y termina.
 
 ## Paso a paso sugerido
 
 1. Leer el tipo
 
-- Lee un texto: “¿Qué tipo de temperatura ingresarás? (C/F)”.
-- Normaliza con trim y toUpperCase.
-- Valida que el tipo sea exactamente 'C' o 'F'.
-- Si no es válido, muestra un mensaje (“Tipo inválido: usa C o F”) y termina.
+- Lee: “¿Qué tipo de temperatura ingresarás? (C/F)”.
+- Normaliza: trim + toUpperCase.
+- Valida: debe ser 'C' o 'F'. Si no, muestra “Tipo inválido: usa C o F” y termina.
 
 2. Leer la temperatura
 
-- Lee el texto: “Ingresa la temperatura:”.
-- Convierte a Number.
+- Lee: “Ingresa la temperatura:”.
+- Convierte con Number().
 - Si es NaN, muestra “Temperatura inválida: ingresa un número” y termina.
 
 3. Calcular ambos valores
 
-- Si el tipo es 'C':
-  - c = valor ingresado
-  - f = c × 9/5 + 32
-- Si el tipo es 'F':
-  - f = valor ingresado
-  - c = (f − 32) × 5/9
+- Si tipo === 'C': c = valor; f = c × 9/5 + 32
+- Si tipo === 'F': f = valor; c = (f − 32) × 5/9
 
 4. Mostrar resultados
 
-- Imprime ambas unidades, por ejemplo:
-  - “Celsius: 25°C”
-  - “Fahrenheit: 77°F”
-- Opcional: redondea a 1–2 decimales al mostrar (p. ej., con toFixed).
+- Imprime ambos: “Celsius: X°C” y “Fahrenheit: Y°F”
+- Opcional: redondea con toFixed(1) o toFixed(2) al mostrar.
 
-5. Estructura y limpieza (opcional, recomendado)
+5. Estructura (opcional)
 
-- Crea funciones pequeñas: isValidType(tipo), toF(c), toC(f).
-- Usa “early return” para manejar errores rápido y mantener el flujo claro.
+- Funciones pequeñas: isValidType(tipo), toF(c), toC(f).
+- Usa “early return” para errores.
+
+## Ejemplos de ejecución
+
+```text
+¿Qué tipo de temperatura ingresarás? (C/F): c
+Ingresa la temperatura: 25
+Celsius: 25 °C
+Fahrenheit: 77 °F
+```
+
+```text
+¿Qué tipo de temperatura ingresarás? (C/F): F
+Ingresa la temperatura: 32
+Celsius: 0 °C
+Fahrenheit: 32 °F
+```
 
 ## Casos de prueba mínimos
 
-- Entrada: tipo C, temp 0 → Salida: C=0, F=32
-- Entrada: tipo C, temp 100 → Salida: C=100, F=212
-- Entrada: tipo F, temp 32 → Salida: C=0, F=32
-- Entrada: tipo F, temp 212 → Salida: C=100, F=212
-- Entrada: tipo f (minúscula), temp 50 → Debe funcionar igual que 'F'
-- Entrada: tipo X → Mensaje de error por tipo inválido
-- Entrada: tipo C, temp “hola” → Mensaje de error por número inválido
-- Bordes: negativos (p. ej., C = −40 → F = −40)
+- Tipo C, temp 0 → C=0, F=32
+- Tipo C, temp 100 → C=100, F=212
+- Tipo F, temp 32 → C=0, F=32
+- Tipo F, temp 212 → C=100, F=212
+- Tipo f (minúscula), temp 50 → Debe funcionar como 'F'
+- Tipo X → Error por tipo inválido
+- Tipo C, temp “hola” → Error por número inválido
+- Borde: C = −40 → F = −40 (coinciden)
+
+## Errores comunes y cómo resolverlos
+
+1. Node no inicializado / scripts de npm
+
+- Al intentar `npm start` aparece: “Missing script: start”.
+
+  - Solución: añade en `package.json` del reto:
+    ```json
+    {
+      "scripts": {
+        "start": "node index.js"
+      }
+    }
+    ```
+  - Alternativa: ejecuta directo sin npm: `node index.js`.
+
+- No tienes `package.json` en la carpeta del reto y quieres usar npm:
+  - Crea uno rápido:
+    ```sh
+    npm init -y
+    ```
+  - Luego agrega el script “start” como arriba.
+
+2. No existe el helper `helpers/input.js` o la ruta está mal
+
+- Error típico: “Cannot find module './helpers/input.js'” o similar.
+
+  - Verifica que el archivo exista en `01.Retos/reto-07-convertidor-temperatura/helpers/input.js`.
+  - Verifica el require en `index.js`:
+    ```js
+    const { ask } = require("./helpers/input.js"); // ruta relativa desde index.js
+    ```
+
+- Si no tienes helper, crea uno simple:
+
+  ```js
+  // filepath: 01.Retos/reto-07-convertidor-temperatura/helpers/input.js
+  const readline = require("readline");
+
+  function ask(questionText) {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+    });
+
+    return new Promise((resolve) => {
+      rl.question(questionText, (answer) => {
+        rl.close();
+        resolve(answer);
+      });
+    });
+  }
+
+  module.exports = {
+    ask,
+  };
+  ```
+
+3. Ruta al ejecutar
+
+- Si ves “Cannot find module 'index.js'”:
+  - Asegúrate de estar dentro de `01.Retos/reto-07-convertidor-temperatura` al ejecutar.
+  - O ejecuta con ruta relativa: `node 01.Retos/reto-07-convertidor-temperatura/index.js`.
 
 ## Pistas (sin código)
 
-- Normaliza el tipo con: convertir a mayúsculas + trim.
-- Valida el tipo con comparaciones simples (ifs).
+- Normaliza el tipo con trim + toUpperCase.
+- Valida con ifs simples ('C' o 'F').
 - Convierte la temperatura con Number() y verifica NaN.
-- Las fórmulas sólo cambian según el tipo inicial; imprime ambos resultados siempre.
+- Calcula y muestra ambos valores siempre.
 
-## Cómo ejecutar (PowerShell en Windows)
+## Plantilla comentada (para guiar, sin solución)
 
-```powershell
-# Ubícate en la carpeta del reto
-cd "/2025-3-Javascript/01.Retos/reto-07-convertidor-temperatura"
+```js
+const { ask } = require("./helpers/input");
 
-# Ejecuta el programa
+async function main() {
+  // 1) Pregunta tipo (C/F) → normaliza a mayúsculas y valida
+  // 2) Pregunta temperatura → convierte a Number y valida NaN
+  // 3) Según el tipo, calcula la conversión
+  // 4) Imprime ambos valores (opcional: formatea con toFixed)
+}
+
+main();
+```
+
+## Cómo ejecutar
+
+```sh
+# 1) Entra a la carpeta del reto
+cd 01.Retos/reto-07-convertidor-temperatura
+
+# 2) Ejecuta con Node (sin npm)
 node index.js
 ```
+
+Opcional con npm (si quieres un script):
+
+```sh
+# Inicializa (si no tienes package.json)
+npm init -y
+
+# Agrega "start": "node index.js" en package.json y luego:
+npm start
+```
+
+## Criterios de evaluación
+
+- Flujo correcto (tipo → número → ambos resultados).
+- Validaciones claras (tipo y número).
+- Fórmulas correctas.
+- Mensajes comprensibles y ordenados.
+- Código legible (nombres claros; funciones pequeñas si las usas).

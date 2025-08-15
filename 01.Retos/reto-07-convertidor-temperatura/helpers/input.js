@@ -1,4 +1,3 @@
-// input.js
 const readline = require('readline');
 
 function ask(questionText) {

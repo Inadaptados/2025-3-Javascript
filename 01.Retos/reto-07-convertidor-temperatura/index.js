@@ -1,9 +1,11 @@
-// Importa la función ask desde el helper de entrada (ruta relativa a este archivo).
-const { ask } = require('../helpers/input.js');
+const { ask } = require('./helpers/input');
 
 async function main() {
-
+  // 1) Pregunta tipo (C/F) → normaliza a mayúsculas y valida
+  // 2) Pregunta temperatura → convierte a Number y valida NaN
+  // 3) Según el tipo, calcula la conversión
+  // 4) Imprime ambos valores (opcional: formatea con toFixed)
+  // }
 }
 
-// Invoca la función main que contiene el inicio del flujo del programa
 main();
