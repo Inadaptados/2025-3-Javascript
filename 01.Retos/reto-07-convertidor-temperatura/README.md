@@ -30,15 +30,15 @@ Archivos del reto:
 
 1. Leer el tipo
 
-- Lee: “¿Qué tipo de temperatura ingresarás? (C/F)”.
+- Lee: "¿Qué tipo de temperatura ingresarás? (C/F)".
 - Normaliza: trim + toUpperCase.
-- Valida: debe ser 'C' o 'F'. Si no, muestra “Tipo inválido: usa C o F” y termina.
+- Valida: debe ser 'C' o 'F'. Si no, muestra "Tipo inválido: usa C o F" y termina.
 
 2. Leer la temperatura
 
-- Lee: “Ingresa la temperatura:”.
+- Lee: "Ingresa la temperatura:".
 - Convierte con Number().
-- Si es NaN, muestra “Temperatura inválida: ingresa un número” y termina.
+- Si es NaN, muestra "Temperatura inválida: ingresa un número" y termina.
 
 3. Calcular ambos valores
 
@@ -47,13 +47,13 @@ Archivos del reto:
 
 4. Mostrar resultados
 
-- Imprime ambos: “Celsius: X°C” y “Fahrenheit: Y°F”
+- Imprime ambos: "Celsius: X°C" y "Fahrenheit: Y°F"
 - Opcional: redondea con toFixed(1) o toFixed(2) al mostrar.
 
 5. Estructura (opcional)
 
 - Funciones pequeñas: isValidType(tipo), toF(c), toC(f).
-- Usa “early return” para errores.
+- Usa "early return" para errores.
 
 ## Ejemplos de ejecución
 
@@ -79,14 +79,14 @@ Fahrenheit: 32 °F
 - Tipo F, temp 212 → C=100, F=212
 - Tipo f (minúscula), temp 50 → Debe funcionar como 'F'
 - Tipo X → Error por tipo inválido
-- Tipo C, temp “hola” → Error por número inválido
+- Tipo C, temp "hola" → Error por número inválido
 - Borde: C = −40 → F = −40 (coinciden)
 
 ## Errores comunes y cómo resolverlos
 
 1. Node no inicializado / scripts de npm
 
-- Al intentar `npm start` aparece: “Missing script: start”.
+- Al intentar `npm start` aparece: "Missing script: start".
 
   - Solución: añade en `package.json` del reto:
     ```json
@@ -103,11 +103,11 @@ Fahrenheit: 32 °F
     ```sh
     npm init -y
     ```
-  - Luego agrega el script “start” como arriba.
+  - Luego agrega el script "start" como arriba.
 
 2. No existe el helper `helpers/input.js` o la ruta está mal
 
-- Error típico: “Cannot find module './helpers/input.js'” o similar.
+- Error típico: "Cannot find module './helpers/input.js'" o similar.
 
   - Verifica que el archivo exista en `01.Retos/reto-07-convertidor-temperatura/helpers/input.js`.
   - Verifica el require en `index.js`:
@@ -142,7 +142,7 @@ Fahrenheit: 32 °F
 
 3. Ruta al ejecutar
 
-- Si ves “Cannot find module 'index.js'”:
+- Si ves "Cannot find module 'index.js'":
   - Asegúrate de estar dentro de `01.Retos/reto-07-convertidor-temperatura` al ejecutar.
   - O ejecuta con ruta relativa: `node 01.Retos/reto-07-convertidor-temperatura/index.js`.
 
@@ -195,3 +195,86 @@ npm start
 - Fórmulas correctas.
 - Mensajes comprensibles y ordenados.
 - Código legible (nombres claros; funciones pequeñas si las usas).
+
+## Para estudiantes avanzados
+
+Si este reto te resulta sencillo, prueba estos desafíos:
+
+### En línea (CodeWars)
+
+1. **[Temperature Converter (7 kyu)](https://www.codewars.com/kata/convert-between-celsius-and-fahrenheit)** - Compara tu solución con otras
+2. **[Digital root (6 kyu)](https://www.codewars.com/kata/541c8630095125aba6000c00)** - Loops avanzados con recursión
+3. **[Build Tower (6 kyu)](https://www.codewars.com/kata/576757b1df89ecf5bd00073b)** - Patrones con strings y espacios
+4. **[Even or Odd (8 kyu)](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe)** - Repaso del operador módulo
+5. **[Grasshopper - Grade book (8 kyu)](https://www.codewars.com/kata/55cbd4ba903825f7970000f5)** - Condicionales con rangos
+
+### Extensiones locales
+
+1. **Multi-unidades**: Agrega Kelvin (K = C + 273.15) y Rankine (R = F + 459.67)
+2. **Historial**: Permite varias conversiones y guarda el historial en un array
+3. **Validaciones físicas**: Rechaza temperaturas bajo el cero absoluto (-273.15°C)
+4. **Menú completo**: Sistema que no termine hasta que el usuario elija "salir"
+
+### Reto ninja 🥷: Convertidor Universal Modular
+
+Crea un sistema de conversión completo que maneje múltiples tipos de medidas con arquitectura profesional:
+
+#### Funcionalidades objetivo:
+
+- **Temperaturas**: Celsius, Fahrenheit, Kelvin, Rankine
+- **Longitudes**: Metro, centímetro, kilómetro, pie, pulgada, milla
+- **Pesos**: Gramo, kilogramo, libra, onza, tonelada
+- **Volúmenes**: Litro, mililitro, galón, pinta, metro cúbico
+
+#### Arquitectura sugerida:
+
+```
+convertidor-universal/
+├── index.js                    // Menú principal y flujo de la app
+├── modules/
+│   ├── temperature.js          // Clase Temperature con todas las conversiones
+│   ├── length.js               // Clase Length
+│   ├── weight.js               // Clase Weight
+│   └── volume.js               // Clase Volume
+├── utils/
+│   ├── input.js                // Helper para leer consola
+│   ├── validator.js            // Funciones de validación centralizadas
+│   └── formatter.js            // Formateo de números y unidades
+└── data/
+    └── conversions.js          // Factores de conversión y unidades válidas
+```
+
+#### Ejemplo de flujo esperado:
+
+```text
+=== CONVERTIDOR UNIVERSAL ===
+1. Temperatura
+2. Longitud
+3. Peso
+4. Volumen
+5. Salir
+Selecciona una opción: 1
+
+=== CONVERSIÓN DE TEMPERATURA ===
+Unidades disponibles: C, F, K, R
+¿Desde qué unidad convertir?: C
+Ingresa la temperatura: 25
+¿A qué unidades convertir? (todas/específica): todas
+
+Resultados:
+• Celsius:    25.0°C
+• Fahrenheit: 77.0°F
+• Kelvin:     298.15K
+• Rankine:    536.67°R
+
+¿Otra conversión? (s/n): s
+```
+
+#### Criterios técnicos del reto ninja:
+
+- **Modularidad**: Cada tipo de medida en su propio archivo/clase
+- **Extensibilidad**: Fácil añadir nuevas unidades sin tocar código existente
+- **Validaciones robustas**: Manejo de todas las entradas inválidas
+- **Interfaz clara**: Menús informativos y resultados bien formateados
+- **Persistencia**: Historial de conversiones guardado en memoria durante la sesión
+- **Eficiencia**: Factores de conversión centralizados, no hardcodeados
