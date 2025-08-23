@@ -9,10 +9,10 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 ├── README.md                    # Este archivo (índice general)
 ├── 01-ambiente-desarrollo.md    # Configuración del entorno
 ├── 02-como-resolver-retos.md    # Metodología para resolver ejercicios
-├── 03-comandos-git.md          # Comandos Git esenciales
-├── 04-debugging-tips.md        # Técnicas de depuración
-├── 05-recursos-extra.md        # Enlaces y recursos adicionales
-└── assets/                     # Imágenes y recursos visuales
+├── 03-comandos-git.md           # Comandos Git esenciales
+├── 04-debugging-tips.md         # Técnicas de depuración
+├── 05-recursos-extra.md         # Enlaces y recursos adicionales
+└── assets/                      # Imágenes y recursos visuales
     ├── screenshots/
     └── diagramas/
 ```
@@ -54,9 +54,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás guías 
 ### 📖 [05. Recursos Adicionales](./05-recursos-extra.md)
 
 - Documentación oficial
-- Tutoriales complementarios
 - Herramientas útiles
-- Comunidades y foros
 - **Estado**: ✅ Completo
 
 ## 🚀 Por Dónde Empezar
@@ -75,7 +73,7 @@ Si eres nuevo en el curso, sigue este orden:
 
 - Revisa la sección correspondiente en esta documentación
 - Consulta [04. Tips de Debugging](./04-debugging-tips.md)
-- Crea un issue en tu repositorio con detalles del problema
+- Contáctanos por discord o agenda una asesoría
 
 ### 💡 Dudas Conceptuales
 
@@ -89,14 +87,58 @@ Esta documentación se actualiza constantemente. Si encuentras información desa
 
 ---
 
+## ❓ Preguntas Frecuentes
+
+**¿Por qué mi programa no imprime nada?**
+
+- Verifica que estés usando `console.log` correctamente y que ejecutas el archivo correcto.
+
+**¿Qué hago si recibo un error de sintaxis?**
+
+- Revisa que todos los paréntesis, llaves y corchetes estén cerrados. Lee el mensaje de error y busca la línea indicada.
+
+**¿Cómo pido ayuda si no entiendo un ejercicio?**
+
+- Consulta la sección de recursos adicionales, pregunta en clase o en los canales de comunicación del curso.
+
+---
+
+## 🛠️ Guía Rápida de Errores
+
+- **Error: 'ask is not defined'**
+  Solución: Verifica que importaste correctamente la función `ask`.
+
+- **Error: 'Cannot read property ... of undefined'**
+  Solución: Revisa que el arreglo o variable que usas esté inicializado.
+
+- **Error: 'Unexpected token'**
+  Solución: Revisa la sintaxis, especialmente comas, paréntesis y llaves.
+
+- **No se muestra nada en consola**
+  Solución: Asegúrate de ejecutar el archivo correcto y de tener llamadas a `console.log`.
+
+---
+
+## 📖 Glosario de Términos
+
+- **Variable**: Espacio donde se guarda información para usarla en el programa.
+- **Arreglo**: Lista ordenada de elementos.
+- **Función**: Bloque de código que realiza una tarea específica.
+- **Ciclo**: Repetición de instrucciones varias veces.
+- **Condicional**: Decisión en el programa según una condición.
+- **Índice**: Posición de un elemento dentro de un arreglo (empieza en 0).
+- **Sintaxis**: Reglas para escribir correctamente el código.
+
+---
+
 ## 📈 Progreso Recomendado
 
 - [ ] ✅ Ambiente configurado y funcionando
 - [ ] 🧩 Metodología de resolución entendida
 - [ ] 🔧 Git configurado y comandos básicos dominados
 - [ ] 🎯 Primer reto completado
-- [ ] 🚀 ¡Listo para el bootcamp!
+- [ ] 🚀 ¡Listo para el curso!
 
 ---
 
-_¡Bienvenido al mundo de la programación! 🌟_
+_¡Bienvenido al mundo de la programación con JavaScript!_

@@ -1,8 +1,15 @@
-# Semana 1 — Introducción a JavaScript
+# Semana 1 — Introducción a la Programación y Fundamentos de JavaScript
 
 ## Objetivo
 
-Familiarizarse con los conceptos básicos de programación en JavaScript: variables, tipos de datos, operadores, entrada/salida y primeros ciclos.
+Comprender qué es programar, aprender la sintaxis básica de JavaScript y usar estructuras de control simples.
+
+## Temario y clases
+
+- **Clase 1:** Concepto de algoritmo, qué significa programar, variables y tipos de datos.
+- Operadores aritméticos, lógicos y uso de condicionales if/else.
+- **Clase 3:** Uso de condicionales anidadas y combinadas para resolver problemas complejos (ej. múltiplos con %).
+- Introducción a funciones: definición, estructura y reutilización de lógica.
 
 ## Ejercicios
 
@@ -23,6 +30,19 @@ node ejercicio1.js
 ```
 
 Reemplaza el nombre del archivo por el que quieras probar.
+
+### Buenas prácticas
+
+- Comenta tu código para explicar qué hace cada parte.
+- Usa nombres descriptivos para tus variables.
+- Prueba tu código con diferentes valores y observa los resultados.
+- Si tienes dudas, pregunta en clase o revisa la documentación oficial.
+
+### Ejercicios opcionales
+
+- Escribe un programa que calcule el área de un triángulo.
+- Crea un ciclo que imprima los números del 1 al 50.
+- Modifica un ejercicio para pedir datos al usuario usando la función `ask`.
 
 ## Recursos útiles
 
