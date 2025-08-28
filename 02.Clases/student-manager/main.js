@@ -43,7 +43,13 @@ function displayStudents() {
 
   for (let i = 0; i < students.length; i++) {
     const li = document.createElement("li");
+    if (students[i].grade >= 70) {
+      li.innerHTML = `<p class='passed'>${students[i].name} - ${students[i].grade} - ${students[i].status}</p>`;
+    } else {
+      li.innerHTML = `<p class='failed'>${students[i].name} - ${students[i].grade} - ${students[i].status}</p>`;
+    }
     li.innerHTML = `<p>${students[i].name} - ${students[i].grade} - ${students[i].status}</p>`;
+    li.classList.add(students[i].grade >= 70 ? 'passed' : 'failed');
     list.appendChild(li);
   }
 }
